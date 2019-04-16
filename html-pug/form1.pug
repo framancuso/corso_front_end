@@ -1,0 +1,37 @@
+include Input.pug
+doctype html
+html
+    head
+        title FORM
+    body 
+        h1 FORM
+        form(action="http://www.google.it",method="POST",target="=_blank")
+            fieldset
+                legend ANAGRAFICA
+                div
+                    +Input("form_name","text","name","NOME")
+                    +Input("form_surname","text","surname","COGNOME")
+                    p GENDER:
+                    +Input("form_male","radio","gender","MALE")
+                    +Input("form_female","radio","gender","FEMALE")
+                    br
+                    p CITY:
+                    label(for="form_city")
+                    select
+                        option(value="--choose city") choose city
+                        option(value="Milano") Milano
+                        option(value="Torino") Torino
+            fieldset
+                legend UTENZA
+                div
+                    +Input("form_username","text","username","USERNAME")
+                    +Input("form_password","password","password","PASSWORD")
+                    +Input("form_password2","password","password2","PASSWORD CONFIRM")
+                    +Input("form_email","email","email","EMAIL")
+            fieldset
+                legend NOTE
+                div
+                    textarea(name="note", cols="30", rows="10")
+            br
+            +Button("reset","RESET")
+            +Button("submit","SUBMIT")

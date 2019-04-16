@@ -1,0 +1,16 @@
+mixin dataList(name,surname)
+    tr
+        td=name
+        td=surname
+
+doctype html
+html
+    head
+        title My PUG
+    body
+        div
+            h1 My PUG
+            div
+                table(border="2", cellspacing="2", cellpadding="2" width="100%")
+                    +dataList("Francesco","Mancuso")
+            

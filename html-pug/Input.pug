@@ -1,0 +1,25 @@
+mixin Input(id,type,name,stringa,value)
+    case type
+        when "text"
+            label(for=id) #{stringa}
+            br
+            input(id=id,type="text",name=name)
+            br
+            br
+        when "radio"
+            label(for=id) #{stringa}
+            input(id=id,type="radio",name=name,value=value)
+        when "password"
+            label(for=id) #{stringa}
+            br
+            input(id=id,type="password",name=name)
+            br
+            br
+        when "email"
+            label(for=id) #{stringa}
+            br
+            input(id=id,type="email",name=name)
+            br
+            br
+mixin Button(type,stringa)
+    button(type=type) #{stringa}
