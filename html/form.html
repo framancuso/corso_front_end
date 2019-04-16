@@ -15,12 +15,47 @@
                     <label for="form_surname"> SURNAME </label><br>
                     <input id="form_surname" type="text" name="surname"/>
                     <br><br>
-                    <label for="form_password"> PASSWORD </label> <br>
-                    <input id="form_password" type="password" name="password"/>
+                    GENDER:
+                    <label for="form_male"> MALE </label>
+                    <input id="form_male" type="radio" name="gender"/>
+                    <label for="form_female"> FEMALE </label>
+                    <input id="form_female" type="radio" name="gender"/>
+                    <br><br>
+                    CITY:
+                    <select>
+                        <option value="Milano">Milano</option>
+                        <option value="Torino">Torino</option>
+                    </select>
                 </div>
                 <br>
-                <button type="submit">SUBMIT</button>
+                
             </fieldset>
+            <br>
+            <fieldset>
+                    <legend>UTENZA</legend>
+                    <div>
+                        <label for="form_username"> USERNAME </label><br>
+                        <input id="form_username" type="text" name="usernname"/>
+                        <br><br>
+                        <label for="form_password"> PASSWORD </label><br>
+                        <input id="form_password" type="password" name="password"/>
+                        <br><br>
+                        <label for="form_password2"> PASSOWRD CONFIRM </label><br>
+                        <input id="form_password2" type="password" name="password2"/>
+                        <br><br>
+                        <label for="form_email"> EMAIL </label><br>
+                        <input id="form_email" type="email" name="email"/>
+                        <br><br>
+                    </div>
+            </fieldset>
+            <fieldset>
+                    <legend>NOTE</legend>
+                    <div>
+                        <textarea> </textarea>
+                    </div>
+            </fieldset>
+            <button type="reset">RESET</button>
+            <button type="submit">SUBMIT</button>
         </form>
     </body>
 </html>
