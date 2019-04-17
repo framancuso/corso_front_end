@@ -1,0 +1,45 @@
+
+.coloreVerde {
+    color: green;
+}
+
+.coloreRosso {
+    color: red;
+}
+
+
+li,.coloreRosso, #PippoH1{
+    font-size: 50px;
+}
+li{
+    text-decoration: underline;
+}
+
+span h2 {
+    color:purple;
+}
+
+a ~ p{
+   color: red; 
+}
+a+p{
+    color:blue;
+}
+#app {
+    font-size: 24px;
+}
+h1{
+    font-size: 1em;
+}
+p {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid #333333 5px;
+    padding: 10px;
+    margin:10px;
+    background-color:#333333;
+    border-radius:  4px;
+    text-align: center;
+    display: inline;
+}
+ /* commenti */
