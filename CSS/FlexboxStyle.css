@@ -1,0 +1,56 @@
+.FlexBoxWrapper{
+    display: flex;
+    background: yellow;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+.MainContentWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: green;
+    justify-content: space-between;
+    align-content: center;
+}
+.Sidebar{
+    background: greenyellow;
+    width: 200px;
+    flex-grow: 1;
+    border: black solid 3px;
+    border-left: 0px;
+    order:2;
+}
+.Articles{
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    width: 500px;
+    height: 1000px;
+    flex-grow: 6;
+    border: black solid 3px;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+.Article{
+    display: flex;
+    background: red;
+    width: 1000px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    
+}

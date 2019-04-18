@@ -1,0 +1,83 @@
+header{
+    background: purple;
+    height: 3em;
+    border: black solid 4px;
+    border-bottom: 0px;
+}
+.logo{
+    margin: 1em;
+    float: left;
+}
+.title{
+    margin: 1em 8em;
+    float: right;
+}
+.menu{
+    background: yellow;
+    height: 1.5em;
+    border:black solid 4px;
+    border-bottom: 0px;
+}
+.wrapper{
+    position: relative;
+    margin-top: 0.2em;
+    margin-left: 1em;
+    float:left;
+}
+
+.tendina ul{
+    position: absolute;
+    background: green;
+    display: none;
+    width: 150px;
+    
+}
+.tendina a{
+    color: blue;
+    text-decoration: none;
+}
+.wrapper:hover{
+    border: grey solid 2px;
+}
+.wrapper:hover .tendina ul{
+    display: block;
+}
+.sidebar{
+    background:green;
+    width: 30%;
+    height: 800px;
+    float: right;
+    border: black solid 4px;
+    float:right;
+}
+.sidebartext{
+    margin: 200px 130px;
+}
+.sfondocontent{
+    border: black solid 4px;
+    border-right: 0px;
+    background: orange;
+    width: 69.5%;
+    height:800px;
+}
+.box1{
+    margin: 7px 8px 0px 7px;
+    background: red;
+    border: black solid 4px;
+    height: 24em;
+}
+.box2{
+    border: black solid 4px;
+    border-bottom: 0px;
+    background: red;
+    height: 24.4em;
+    margin: 7px 8px 0px 7px;
+}
+.box3{
+    background: cadetblue;
+    height: 20px;
+    border: black solid 4px;
+    border-top: 0px;
+    text-align: center;
+    clear:both;
+}

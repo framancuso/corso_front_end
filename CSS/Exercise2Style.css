@@ -1,0 +1,113 @@
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 31, 58, 0.8);
+    width: 100%;
+    height: 100%;
+    
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 586px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 31, 58);
+    width: 300px;
+    height: 586px;
+    align-items: center;
+}
+.article{
+    background: white;
+    width: 600px;
+    height: 586px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+}
+.image{
+    width: 70%;
+    height: 70%;
+}
+.attivazione{
+    display: flex;
+    align-self: flex-start;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 32px;
+}
+.testosidebar{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-right: 32px;
+    color: white;
+    opacity: 0.5;
+}
+.attiva{
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-top: 22px;
+    margin-left: 32px;
+}
+.linkattiva{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.onboarding{
+    margin-top: 69px;
+    margin-left: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+.latino2{
+    width: 380px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 32px;
+    margin-top: 17px;
+    color: #666;
+}
+.inputus{
+    margin-left: 32px;
+    font-size: 12px;
+    margin-top: 70px;
+    color:#333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="text"]{
+    width: 536px;
+    height: 30px;
+    margin: 16px 32px 0px;
+}
+.inputpw{
+    margin-left: 32px;
+    font-size: 12px;
+    margin-top: 16px;
+    color:#333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="password"]{
+    width: 536px;
+    height: 30px;
+    margin: 16px 32px 0px 32px;
+}
