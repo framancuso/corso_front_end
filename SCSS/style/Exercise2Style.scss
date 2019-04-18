@@ -16,7 +16,7 @@
     flex-direction: row;
     width: 900px;
     height: 586px;
-    @include BoxShadow(#2697fa);
+    @include BoxShadow(#333);
 }
 .sidebar{
     display: flex;

@@ -12,9 +12,9 @@
   flex-direction: row;
   width: 900px;
   height: 586px;
-  -webkit-box-shadow: 15px 15px 5px 0px #2697fa;
-  -moz-box-shadow: 15px 15px 5px 0px #2697fa;
-  box-shadow: 15px 15px 5px 0px #2697fa;
+  -webkit-box-shadow: 15px 15px 5px 0px #333;
+  -moz-box-shadow: 15px 15px 5px 0px #333;
+  box-shadow: 15px 15px 5px 0px #333;
 }
 
 .sidebar {
