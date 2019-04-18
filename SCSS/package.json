@@ -1,0 +1,24 @@
+{
+  "name": "corso_front_end",
+  "version": "1.0.0",
+  "description": "**bold**",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "sass --watch style:style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framancuso/corso_front_end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/framancuso/corso_front_end/issues"
+  },
+  "homepage": "https://github.com/framancuso/corso_front_end#readme"
+}
