@@ -1,0 +1,302 @@
+@media screen and (max-width:700px) {
+.blue{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100%;
+    width: 100%;
+    font-size: 6px;
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+    }
+    .image{
+        height: 20em;
+    }
+    .attivazione{
+        display: none;
+    }
+    .testosidebar{
+        display: none;
+    }
+    .attiva{
+        display: none;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        margin: 0 6em;
+        .onboarding{
+            margin-top: 1em;
+            font-size: 4em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .latino2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            margin-top: 1em;
+            color: black;
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        .label{
+            font-size: 2em;
+            margin-top: 1em;
+        }
+        input[type="text"]{
+            width: 100%;
+            height: 5%;
+            font-size: 2em;
+            margin-top: 0.75em;
+            padding: 1em;
+            border: #2697fa solid 2px;
+            &::placeholder{
+                color: #2697fa;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        input[type="password"]{
+            width: 100%;
+            height: 5%;
+            font-size: 2em;
+            margin-top: 0.75em;
+            padding: 1em;
+            border: #2697fa solid 2px;
+            &::placeholder{
+                color: #2697fa;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        }
+    }
+    .bottone{
+        margin: 2em 0 1em;
+        width: 100%;
+        background: #2697fa;
+        border: 0;
+        .scrittabottone{
+            padding:0.4em;
+            font-size: 2em;
+        }
+    }
+    .recuperascritta{
+        font-size: 2em;
+        text-decoration: none;
+        color: #2697fa;
+    }
+    .noaccount{
+        margin-top: 5em;
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .bottone2{
+        margin-top: 1em;
+        width: 6em;
+        height: 3em;
+        background: #2697fa;
+        border: 0;
+        margin-bottom: 4em;
+        .scrittabottone2{
+            font-size: 1em;
+        }
+        
+    }
+}
+
+@media screen and (min-width:701px){
+    @mixin BoxShadow($colore){
+        -webkit-box-shadow: 15px 15px 5px 0px $colore;
+        -moz-box-shadow: 15px 15px 5px 0px $colore;
+        box-shadow: 15px 15px 5px 0px $colore;
+    }
+    .blue{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(38, 151, 250);
+        width: 100%;
+        height: 100%;
+    }
+    .flexbox{
+
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 586px;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        background: rgb(0, 31, 58);
+        width: 300px;
+        height: 586px;
+        align-items: center;
+    }
+    .article{
+        background: white;
+        width: 600px;
+        height: 586px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        width: 160px;
+        height: 160px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .image{
+        width: 70%;
+        height: 70%;
+    }
+    .attivazione{
+        align-self: flex-start;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 80px;
+        margin-left: 32px;
+        display: block;
+    }
+    .testosidebar{
+        display: block;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 32px;
+        margin-top: 10px;
+        margin-right: 32px;
+        color: white;
+        opacity: 0.5;
+    }
+    .attiva{
+        text-transform: uppercase;
+        align-self: flex-start;
+        margin-top: 22px;
+        margin-left: 32px;
+    }
+    .linkattiva{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+    .linkattiva:hover{
+        text-decoration: underline;
+    }
+    .onboarding{
+        margin-top: 69px;
+        margin-left: 32px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: #333;
+    }
+    .latino2{
+        width: 380px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 32px;
+        margin-top: 17px;
+        color: #666;
+    }
+    .label{
+        margin-left: 32px;
+        font-size: 12px;
+        margin-top: 87px;
+        color:#333;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    input[type="text"]{
+        width: 536px;
+        height: 30px;
+        margin: 10px 32px 0px;
+        padding-left: 10px;
+        border: #333 solid 1px;
+        border-radius: 0px;
+        &::placeholder{
+            color: #2697fa;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    
+    .label{
+        margin-left: 32px;
+        font-size: 12px;
+        margin-top: 87px;
+        color:#333;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    #labelpw{
+        margin-top:16px;
+    }
+    input[type="password"]{
+        width: 536px;
+        height: 30px;
+        margin: 10px 32px 0px 32px;
+        padding-left: 10px;
+        border: #333 solid 1px;
+        border-radius: 0px;
+        &::placeholder{
+            color: #2697fa;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .areabottone{
+        margin-left: 32px;
+        margin-top: 20px;
+    }
+    
+    .bottone{
+        width: 536px;
+        height: 40px;
+        background: rgb(38, 151, 250);
+        padding: 0px;
+        border:0px;
+    }
+    .bottone:active{
+        background-color:rgb(0, 31, 58);
+        box-shadow: 0 5px #666;
+    }
+    .scrittabottone{
+        color: white;
+    }
+    .recupera{
+        margin-left: 32px;
+        margin-top: 20px;
+    }
+    .recuperascritta{
+        color: rgb(21, 113, 252);
+        text-decoration: none;
+        cursor: pointer;
+    
+    }
+    .recuperascritta:hover{
+        text-decoration: underline;
+    }
+    .noaccount{
+        display: none;
+    }
+    .bottone2{
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+.blue {
+  display: flex;
+  padding: 30px;
+  background-color: blue;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.blue div {
+  background: red;
+  padding: 30px;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 24;
+}
+
+@media screen and (max-width: 700px) {
+  .blue {
+    flex-direction: column;
+  }
+  .blue div {
+    width: auto;
+    flex-grow: 1;
+  }
+  .blue div:nth-child(1) {
+    order: 3;
+  }
+  .blue div:last-child {
+    display: none;
+  }
+  .blue div:nth-child(2) {
+    background: green;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .blue {
+    background: yellow;
+  }
+}
+
+/*# sourceMappingURL=MediaQuery.css.map */

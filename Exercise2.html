@@ -1,16 +1,20 @@
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="../Reset.css">
-            <link rel="stylesheet" type="text/css" href="style/Exercise2Style.css">
+            <link rel="stylesheet" type="text/css" href="Reset.css">
+            <link rel="stylesheet" type="text/css" href="SCSS/style/Exercise2MobileStyle.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    </head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">   
+   
+
+             </head>
     <body>
         <div class="blue"> <!-- SFONDO BLU GRANDE -->
             <div class="flexbox"> <!-- FLEXBOX-->
                 <div class="sidebar"> <!-- SIDEBAR-->
                     <div class="logo"> <!-- LOGO -->
-                        <img class="image" src="../CSS/Logo.png">
+                        <img class="image" src="CSS/Logo.png">
                     </div>
                     <div class="attivazione"> <!-- ATTIVAZIONE ACCOUNT -->
                         Attivazione account
@@ -34,38 +38,47 @@
                         massa purus congue neque, nec pellentesque arcu
                     </div>
                     <form action="https://www.google.it" method="GET" target="=_blank">
-                    <div > <!-- USERNAME -->
-                        <div class="inputus">
-                                <label for="form_username" > USERNAME </label><br>
-                        </div>
-                        <div class="label">
-                                <input id="form_username" type="text" name="usernname" placeholder="Inserisci Username"/>
-                        </div>
-                        
-                    </div>
-                    <div> <!-- PASSWORD -->
-                        <div class="inputpw">
-                                <label for="form_password"> PASSWORD </label><br>
-                        </div>
-                        <div class="label">
-                                <input id="form_password" type="password" name="password" placeholder="Inserisci Passwordr"/>
-                        </div>
-                    </div>
-                    <div class="areabottone" > <!-- ACCEDI-->
-                        <button class="bottone" type="reset"> 
-                            <div class="scrittabottone">
-                                ACCEDI
+                    <div class="form">
+                        <div > <!-- USERNAME -->
+                            <div class="label">
+                                    <label for="form_username" > USERNAME </label><br>
                             </div>
-                        </button>
+                            <div class="inputus">
+                                    <input id="form_username" type="text" name="usernname" placeholder="Inserisci Username"/>
+                            </div>
+                            
+                        </div>
+                        <div> <!-- PASSWORD -->
+                            <div class="label" id="labelpw">
+                                    <label for="form_password"> PASSWORD </label><br>
+                            </div>
+                            <div class="inputpw">
+                                    <input id="form_password" type="password" name="password" placeholder="Inserisci Password"/>
+                            </div>
+                        </div>
+                        <div class="areabottone" > <!-- ACCEDI-->
+                            <button class="bottone" type="reset"> 
+                                <div class="scrittabottone">
+                                    Sign in
+                                </div>
+                            </button>
+                        </div>
+                        </form>
                     </div>
-                    </form>
                     <div class="recupera"> <!-- RECUPERA PASSWORD-->
                         <a class="recuperascritta" href="#">
-                            Recupera Password
+                            Forgot password?
                         </a>
+                    </div>
+                    <div class="noaccount">
+                        Don't have an account?
+                    </div>
+                    <div>
+                        <button class="bottone2">
+                        <div class="scrittabottone2"> Sign up </div>
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
     </body>
 </html>

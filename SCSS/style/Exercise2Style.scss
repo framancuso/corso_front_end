@@ -16,7 +16,6 @@
     flex-direction: row;
     width: 900px;
     height: 586px;
-    @include BoxShadow(#333);
 }
 .sidebar{
     display: flex;
@@ -76,6 +75,9 @@
     color: white;
     text-decoration: none;
 }
+.linkattiva:hover{
+    text-decoration: underline;
+}
 .onboarding{
     margin-top: 69px;
     margin-left: 32px;
@@ -94,7 +96,7 @@
 .inputus{
     margin-left: 32px;
     font-size: 12px;
-    margin-top: 77px;
+    margin-top: 87px;
     color:#333;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -102,11 +104,18 @@
 input[type="text"]{
     width: 536px;
     height: 30px;
-    margin: 16px 32px 0px;
+    margin: 10px 32px 0px;
+    padding-left: 10px;
+    border: #333 solid 1px;
+    border-radius: 0px;
+    &::placeholder{
+        color: #2697fa;
+    }
+    &:focus{
+        outline: none;
+    }
 }
-input[type="text"]::placeholder{
-    color: #2697fa;
-}
+
 .inputpw{
     margin-left: 32px;
     font-size: 12px;
@@ -118,18 +127,25 @@ input[type="text"]::placeholder{
 input[type="password"]{
     width: 536px;
     height: 30px;
-    margin: 16px 32px 0px 32px;
-}
-input[type="password"]::placeholder{
-    color: #2697fa;
+    margin: 10px 32px 0px 32px;
+    padding-left: 10px;
+    border: #333 solid 1px;
+    border-radius: 0px;
+    &::placeholder{
+        color: #2697fa;
+    }
+    &:focus{
+        outline: none;
+    }
 }
 .areabottone{
     margin-left: 32px;
     margin-top: 20px;
 }
+
 .bottone{
     width: 536px;
-    height: 50px;
+    height: 40px;
     background: rgb(38, 151, 250);
     padding: 0px;
     border:0px;
@@ -137,7 +153,6 @@ input[type="password"]::placeholder{
 .bottone:active{
     background-color:rgb(0, 31, 58);
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
 }
 .scrittabottone{
     color: white;
@@ -149,4 +164,9 @@ input[type="password"]::placeholder{
 .recuperascritta{
     color: rgb(21, 113, 252);
     text-decoration: none;
+    cursor: pointer;
+
+}
+.recuperascritta:hover{
+    text-decoration: underline;
 }
