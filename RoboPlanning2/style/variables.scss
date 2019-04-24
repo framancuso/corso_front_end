@@ -1,0 +1,7 @@
+$color: #005DAD;
+$biancotrasp: rgba(255, 255, 255, 0.5);
+@mixin Centramento {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}

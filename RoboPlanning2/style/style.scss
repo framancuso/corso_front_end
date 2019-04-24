@@ -1,0 +1,247 @@
+@import "../style/variables.scss";
+body{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+.header{
+    height: 10em;
+    background-color: $color;
+    .headercontent{
+        @include Centramento();
+        .logoescritte{
+            display: flex;
+            .sfondologo{
+                background: rgba(0, 0, 0, 0.4);
+                width: 20em;
+                height: 10em;
+                background-image: url("../img/logo.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                .logo{
+                    width: 11.7em;
+                    height: 5.4em;
+                }
+            }
+            .scritteheader{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 10em;
+                .scrittepiccole{
+                    height: 2.5em;
+                    font-size: 1.5em;
+                    ul{
+                        display: flex;
+                        
+                        li{
+                            list-style-type: none;
+                            &:first-child{
+                                a{
+                                    color: white;
+                                    border-bottom: solid white 1px;
+                                }
+                            }
+                            a{
+                                padding-bottom: 0.5em;
+                                margin: 0.5em;
+                                color: $biancotrasp;
+                                text-decoration: none;
+                                font-weight: bold;
+                                &:hover{
+                                    color: white;
+                                    border-bottom: solid white 1px;
+                                }
+                            } 
+                        }
+                        
+                    }
+                }
+                .scrittagrande{
+                    font-size: 2em;
+                    color: white;
+                    margin-left: 0.375em;
+                }
+            }
+        }
+        .flexboxicone{
+            display: flex;
+            font-size: 2em;
+            height: 2em;
+            align-items: center;
+                li{
+                    list-style-type: none;
+                    a{
+                        color:$biancotrasp;
+                        padding: 0.4em;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            
+        }
+    }
+}
+.toolbar{
+    @include Centramento();
+    justify-content: flex-start;
+    font-size: 10px;
+    li{
+        list-style-type: none;
+        color: grey;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        padding-right: 2em;
+        margin-top: 2em;
+        &:first-child{
+            color: $color;
+            border-bottom: $color solid 2px;
+        }
+        &:nth-child(2){
+            color: $color;
+            border-bottom: $color solid 2px;
+        }
+        i::before{
+            padding-right: 0.5em;
+        }
+    }
+}
+.scrittamiddle{
+    @include Centramento;
+    font-size: 2em;
+    margin: 1em 100px;
+    font-weight: bold;
+}
+.flexboxmiddle{
+    @include Centramento;
+    justify-content: flex-start;
+    background-color: white;
+    .logo{
+        width: 16em;
+        height: 12em;
+        background-image: url("../img/2people.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    .contenuto{
+        display: flex;
+        flex-direction: column;
+        margin: 2.5em 0;
+        justify-content: space-between;
+        width: 100%;
+        .scritte2{
+            color: grey;
+            font-size: 1.2em;
+            &::first-line{
+                color: black;
+                font-weight: bold;
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+        }
+        .show{
+            padding-bottom: 0.8em;
+            a{
+                text-decoration: none;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+.form{
+    @include Centramento;
+    form{
+        width: 100%;
+        ul{
+            display: flex;
+            align-content: space-between;
+            li{
+                margin: 1em;
+                flex-shrink: 4;
+                input{
+                    display: flex;
+                    margin-top: 0.7em;
+                    border-radius: 0.2em;
+                    border: grey solid 1px;
+                    height: 2.7em;
+                    min-width:220px;
+                    &::placeholder{
+                        padding-left: 10px;
+                    }
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    flex-grow: 2;
+                    input{
+                        width: 100%;
+                    }
+                }
+                .boxinput{
+                    display: flex;
+                    width: 100%;
+                    input{
+                        width: 170px;
+                        min-width: auto;
+                        &::placeholder{
+                            padding-left: 10px;
+                        }
+                    }
+                    .boxpercentuale{
+                        display: flex;
+                        align-self: flex-end;
+                        height: 40px;
+                        width: 50px;
+                        background: rgb(144, 144, 144);
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        
+    }
+    }
+    
+}
+.scrittafooter{
+    @include Centramento;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 2em;
+    p{
+        font-size: 0.7em;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+}
+.footer{
+    @include Centramento;
+    .boxesfooter{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 10em;
+        margin: 5em 20em;
+        .box{
+            width: 40%;
+            background: white;
+            height: 20em;
+            display: flex;
+            .logofooter{
+                background-image: url(../img/money.jpg);
+                background-size: 100%;
+                width: 130px;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+    }
+}
+}

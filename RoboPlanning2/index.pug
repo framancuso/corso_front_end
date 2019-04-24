@@ -1,0 +1,72 @@
+mixin each(list)
+    each var1 in list
+        li
+            a(href="#")=var1
+mixin each2(list)
+    each var1 in list
+        li
+            a(href="#")
+                i(class=`fas fa-${var1}`)
+mixin each3(map)
+    each var1,var2 in map
+        li
+            i(class=`fas fa-${var2}`)=var1           
+mixin each4(list)
+    each var1 in list
+        li
+            if var1 == "compatibility" || var1 == "liquidity"
+                label(for=`form_${var1}` style="text-transform:uppercase")= var1
+                br
+                div(class="boxinput")
+                    input(id=`form_${var1}` type="text" name=var1 placeholder="0")
+                    div(class="boxpercentuale") %
+            else 
+                label(for=`form_${var1}` style="text-transform:uppercase")= var1
+                br
+                input(id=`form_${var1}` type="text" name=var1 placeholder="--/--/----")
+doctype html
+html
+    head 
+        title Robo Planning Preview Mode
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+        link(rel="stylesheet" type="text/css" href="../Reset.css")
+        link(rel="stylesheet" type="text/css" href="style/style.css")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    body
+        div(class="header")
+            div(class="headercontent")
+                div(class="logoescritte")
+                    div(class="sfondologo")
+                    div(class="logo")
+                    div(class="scritteheader")
+                        div(class="scrittepiccole")
+                            ul
+                                +each(["Campaigns", "Segments", "Products", "Model portfolios"])   
+                        div(class="scrittagrande") New Campaign
+                div(class="flexboxicone")
+                    +each2(["user", "bell", "comments", "eye", "search"])         
+        div(class="toolbar")
+            +each3({"check-circle":"Segment Choice and Analysis", "circle": "Setup Main Parameters", "user-circle":"Strategies and Constraints", "play-circle":"Conversion", "stop-circle":"Proposals"})
+        div(class="middle")
+            div(class="scrittamiddle") Private EBITDA target
+            div(class="flexboxmiddle")
+                div(class="logo")
+                div(class="contenuto")
+                    div(class="scritte2") Retail clients north-east area
+                        p 36,650 clients
+                    div(class="show")
+                        a(href="#") Show clients list 
+                            i(class="fas fa-chevron-down")
+        div(class="form")
+            form(action="https://www.google.it" method="POST" target="=_blank")
+                ul
+                    +each4(["start_date","end_date","compatibility","liquidity","amount_date"])
+div(class="scrittafooter") Optimize by
+    p You can chooose to optimize redistribution on model portfolios and products
+div(class="footer")
+    div(class="boxesfooter")
+        div(class="box")
+            div(class="logofooter")
+        div(class="box")
