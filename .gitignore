@@ -1,1 +1,12 @@
 node_modules
+.sudo_as_admin_successful
+.zcompdump
+.zcompdump-DESKTOP-F8IL95C-5.4.2
+.zsh_history
+.zshrc
+.bash_history
+.viminfo
+.config
+.npm
+.vscode
+.profile
