@@ -31,6 +31,7 @@ html
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
         link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
         link(rel="stylesheet" type="text/css" href="../Reset.css")
+        script(src="script.js")
         link(rel="stylesheet" type="text/css" href="style/style.css")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width,initial-scale=1.0")
@@ -56,8 +57,16 @@ html
                 div(class="contenuto")
                     div(class="scritte2") Retail clients north-east area
                         p 36,650 clients
+                    div(class="scritte2") Retail admin north-east area
+                        p 6,350 admins
+                    div(class="scritte2") Retail nonloso north-east area
+                        p 3,620 nonlosos   
                     div(class="show")
-                        a(href="#") Show clients list 
+                        button(class="bottone" type="button") Show clients list 
+                            i(class="fas fa-chevron-down")
+                        button(class="bottone" type="button") Show admin list 
+                            i(class="fas fa-chevron-down")
+                        button(class="bottone" type="button") Show nonloso list 
                             i(class="fas fa-chevron-down")
         div(class="form")
             form(action="https://www.google.it" method="POST" target="=_blank")

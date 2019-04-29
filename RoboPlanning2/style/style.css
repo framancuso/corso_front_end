@@ -149,6 +149,9 @@ body {
   font-size: 1.5em;
   line-height: 1.5em;
 }
+.flexboxmiddle .contenuto .displaynone {
+  display: none;
+}
 .flexboxmiddle .contenuto .show {
   padding-bottom: 0.8em;
 }
