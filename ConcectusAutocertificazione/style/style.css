@@ -1,0 +1,153 @@
+.min, body .content, body header {
+  min-width: 1300px;
+}
+
+body {
+  font-size: 10px;
+  background-color: #e4e4e4;
+  font-family: "Open Sans", sans-serif;
+}
+body header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  background-color: #005ea8;
+  color: white;
+}
+body header button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+body header button .fa-list {
+  font-size: 2em;
+  margin: 0 0.3em;
+}
+body header div {
+  font-size: 2em;
+  font-weight: bold;
+}
+body .content {
+  display: flex;
+  flex-direction: column;
+}
+body .content .wrapper {
+  margin: 10px 40px;
+}
+body .content .wrapper .flexbox1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+body .content .wrapper .flexbox1 a {
+  font-size: 1.2em;
+  color: #00b1e7;
+  text-decoration: none;
+}
+body .content .wrapper .flexbox1 .ultimo {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+}
+body .content .wrapper .flexbox1 .ultimo span {
+  color: black;
+}
+body .content .wrapper .flexbox2 {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  background: white;
+  height: 8em;
+  width: 100%;
+}
+body .content .wrapper .flexbox2 img {
+  margin-left: 2em;
+  height: 6em;
+  width: 6em;
+  border-radius: 10em;
+}
+body .content .wrapper .flexbox2 .scrittaimmagine {
+  margin-left: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  line-height: 1.5em;
+}
+body .content .wrapper .flexbox2 .scrittaimmagine p {
+  color: rgba(0, 0, 0, 0.4);
+}
+body .content .wrapper .testo {
+  margin: 1em 0;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+body .content .wrapper .testo p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.5em;
+  line-height: 1.5em;
+}
+body .content .wrapper .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+body .content .wrapper .boxes .box {
+  background-color: white;
+  height: 22em;
+  width: 40em;
+}
+body .content .wrapper .boxes .box:first-child {
+  border: lightgreen solid 2px;
+}
+body .content .wrapper .boxes .box .boxcontent {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1em 2em;
+}
+body .content .wrapper .boxes .box .boxcontent .fa-file {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+body .content .wrapper .boxes .box .boxcontent p {
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.4);
+}
+body .content .wrapper .boxes .box .boxcontent p::first-line {
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+body .content .wrapper .boxes .box .boxcontent .fa-check-circle {
+  color: green;
+  font-size: 1.6em;
+}
+body .content .wrapper .boxes .box .boxcontent .fa-edit {
+  margin-left: 1em;
+  color: #00b1e7;
+  font-size: 1.6em;
+}
+body .content .wrapper .boxes .box .boxcontent button {
+  background: #00b1e7;
+  border: 0;
+  border-radius: 2px;
+  margin-bottom: 0.5em;
+  width: 6em;
+  height: 3em;
+  color: white;
+  cursor: pointer;
+}
+body .content .wrapper .boxes .box .boxcontent #opaco {
+  opacity: 0.5;
+}
+body .content .wrapper .boxes .box .boxcontent .salta {
+  margin-left: 2em;
+  font-size: 1.5em;
+  color: #00b1e7;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
