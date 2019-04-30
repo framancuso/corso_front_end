@@ -1,0 +1,23 @@
+[
+    {
+    "ID":1,
+    "NAME":"ANDREA",
+    "COGNOME":"ROSSI",
+    "GENERE":"MASCHIO",
+    "PROFESSIONE":"DEV"
+    },
+    {
+    "ID":2,
+    "NAME":"MARCO",
+    "COGNOME":"BIANCHI",
+    "GENERE":"MASCHIO",
+    "PROFESSIONE":"MURATORE"
+    },
+    {
+    "ID":3,
+    "NAME":"FEDERICA",
+    "COGNOME":"COLOMBO",
+    "GENERE":"FEMMINA",
+    "PROFESSIONE":"IMPIEGATA"    
+    }
+]
