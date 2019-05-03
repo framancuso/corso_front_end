@@ -1,0 +1,93 @@
+doctype html
+html
+    head
+        title Robo Planning Preview Mode
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+        link(rel="stylesheet" type="text/css" href="style/style.css")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    body
+        div(class="body")
+            header(class="headerwrapper")
+                div(class="topheader")
+                    div(class="objectway")
+                        img(src="./style/img/OW-Logo.svg", alt="logo")
+                    div(class="anchors")
+                        ul
+                            li 
+                                a(href="#") HOME
+                            li 
+                                a(href="#whitebox") THE GROUP
+                            li 
+                                a(href="#bluebox") BUSINESS
+                            li
+                                a(href="#") PARTNERS
+                            li 
+                                a(href="#")  CONTACT US
+                div(class="lowheader")
+                    p Financial Software as its best. 
+                        p Discover our complete digital solution for Wealth
+                        p and Investment Manager.
+                    div(class="learnmore")
+                        a(href="#") Learn more
+            div(class="boxes")
+                div(class="whitebox" id="whitebox")
+                    div(class="contentbox")
+                        div(class="paragraph") ABOUT
+                        div(class="descriptionbox")
+                            div(class="description") 
+                                p THE GROUP
+                                p ObjectWay Group was founded in 1990 and has grown to be a leader in software applications and technology services for financial markets and other corporates in Italy and Europe. The group consists of two companies: ObjectWay Financial Software SpA - the parent company - and ObjectWay iTec SpA. Its teams include more than 500 software and financial business experts serving local and international customers.
+                            div(class="description")
+                                p MISSION
+                                p Our mission is to support the competitiveness of the financial industry and business and to help them to gain market share through the provision of software solutions and outstanding, innovative services: "Winning Software Solutions". ObjectWay has grown to € 50 million in revenue with EBITDA to sales of over 20%.
+                div(class="bluebox" id="bluebox")    
+                    div(class="contentbox" )
+                        div(class="paragraph") BUSINESS
+                        div(class="descriptionbox")
+                            div(class="description")
+                                p Financial software
+                                p(style="margin-bottom:0;") The Financial Software division develops software platforms based on a shared, open application architecture and database. The software answers to the needs of the financial services industry: banks, asset management companies, brokerage houses, insurance companies and consumer credit. We cover the following areas:
+                                    ul
+                                        li financial and insurance product sales, advisory services, fee & revenue management, sales network management;
+                                        li securities processing and asset management.
+                            div(class="description") 
+                                p Technology Solutions
+                                p The Technology Solutions division develops tailor-made software for core-banking processes and Enterprise Portal, Business Process Management (BPM) and Business Intelligence (BI), Collaborative Content Management and Web 2.0 cross-industry solutions. The division provides project staffing services and technology platform & process consultancy for the most common architectures and technology platforms across a broad range of technologies, applications and processes.
+            div(class="contactbox")
+                div(class="scritta")
+                    p CONTACT US
+                    p For more information about the services we offer, and how we can work with you, please provide us with the following items of information.
+                div(class="input")
+                    form(action="https://www.google.it" method="GET" target="=_blank")
+                        div(class="nomenumero")
+                            div(class="nome")
+                                label(for="fullname") FULL NAME*
+                                br
+                                input(id="fullname" type="text" name="name")
+                            div(class="numero")
+                                label(for="telephone") PHONE NUMBER
+                                br
+                                input(id="telephone" type="tel" name="telephone")
+                        div(class="email")
+                            label(for="email") E-MAIL*
+                            br
+                            input(id="email" type="email" name="email")
+                        div(class="message") 
+                            label(for="messaggio") YOUR MESSAGE
+                            br
+                            textarea(id="messaggio" name="textarea")
+                    div(class="button" onclick="mostra()")
+                        button Send the message
+        div(class="sfondogrigiono")
+        div(class="popupno")
+            button(onclick="nascondi()") CHIUDI
+            div(class="dati")
+                p(id="fullnamepopup") Fullname:
+                    span(id="redname")
+                p(id="numeropopup") Telefono:
+                    span(id="rednumber")
+                p(id="mailpopup") Email:
+                    span(id="redmail")
+        script(src="./script.js")
+

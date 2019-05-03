@@ -1,0 +1,247 @@
+@import "fonts/stylesheet.css";
+$margin: 0 110px;
+$buttoncolor: rgb(82, 224, 82);
+$max-width: 1400px;
+@mixin Box($bgcolor,$titlecolor,$textcolor,$firstlinecolor) {
+    width: $max-width;
+    background:$bgcolor;
+    .contentbox{
+    padding-top: 2em;
+    margin: $margin;
+    display: flex;
+    justify-content: space-between;
+    .paragraph{
+        color: $titlecolor;
+        font-size: 5em;
+        font-weight: 900;
+    }
+    .descriptionbox{
+        width: 80em;
+        margin-bottom: 2em;
+        .description{
+            p{
+                line-height: 2em;
+                color:$textcolor;
+                font-weight: bold;
+                margin-bottom: 2em;
+                font-size: 2em;
+                &:first-child{
+                    color:$firstlinecolor;
+                    font-size: 4em;
+                    margin-bottom: 0.5em;
+                    font-weight: normal;
+                }
+            }
+                ul{
+                        color:$textcolor;
+                        font-weight: bold;
+                        margin-bottom: 2em;
+                        font-size: 2em;
+                        line-height: 2em;
+                }
+                
+}}}}
+@mixin input($width,$tipo){
+    label{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgba(black,0.7);
+    }
+    @if ($tipo=="textarea"){
+        textarea{
+            font-size: 2rem;
+            width: $width;
+            height: 20em;
+            margin: 1em 0;
+        }
+    }
+    @else{
+        input{
+            font-size: 2rem;
+            width: $width;
+            margin: 10px 0;
+            height: 40px;;
+            &:focus{
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+html{
+    font-size: 10px;
+}
+.body{
+    background-color: rgb(226, 226, 226);
+    font-size: 10px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .headerwrapper{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url(./img/metropolis.jpg);
+        width: 140em;
+        height: 58em;
+        background-position-x: center;
+        font-family: 'Bitter';
+        .topheader{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin: $margin;
+            margin-top: 1em;
+            .objectway{
+                font-size: 3em;
+            }
+            li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0 2em;
+                a{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+        }
+        .lowheader{
+            margin: $margin;
+            margin-top: 14em;
+            font-weight: bold;
+            p{
+                line-height: 1em;
+                font-size: 2em;
+                font-weight: bold;
+                color: white;
+                &:first-child{
+                    font-size: 4em;
+                    font-weight: bold;
+                    margin-bottom: 0.1em;
+                }
+            }
+            .learnmore{
+                margin-top: 10em;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    background:$buttoncolor;
+                    padding: 1em 3em;
+                    font-size: 1.5em;
+                }
+                
+            }
+        }
+    }
+    .boxes{
+        max-width: $max-width;
+        .whitebox{
+            @include Box(white,rgba(black,0.7) ,rgba(black,0.5) ,rgba(black,0.3) )
+            }
+        .bluebox{
+            @include Box(rgb(31, 67, 121),white ,white ,white )
+        }
+        }
+    .contactbox{
+        width: $max-width;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        margin-bottom: 5em;
+        .scritta{
+            width: 70em;
+            p{
+                font-size: 1.5em;
+                line-height: 2em;
+                color: black;
+                &:first-child{
+                    font-size: 2em;
+                    text-align: center;
+                }
+            }
+        }
+        .input{
+
+            form{
+                width: 70em;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .nomenumero{
+                display: flex;
+                .nome{
+                    margin-right: 1em;
+                    @include input(34.5rem,"text")
+                }
+                .numero{
+                    @include input(34.5rem,"tel")
+                }
+            }
+            .email{
+                @include input(70rem,"email")
+            }
+            .message{
+                @include input(70rem,"textarea")
+            }
+            .button{
+                button{
+                    width: 18em;
+                    height: 4em;
+                    background: rgb(46, 161, 238);
+                    border: 0;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.sfondogrigiosi{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($color: grey, $alpha: 0.5);
+    z-index: 999;
+    display: block;
+}
+.popupsi{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    word-break: break-all;
+    width: 800px;
+    height: 400px;
+    z-index: 1000;
+    background: white;
+    border: purple solid 3px;
+    display: flex;
+    flex-direction: column;
+    button{
+        margin: 1em;
+        padding: 0.5em;
+        align-self: flex-end;
+    }
+    .dati{
+        font-size: 3rem;
+        margin-left: 4em;
+        p{
+            margin-bottom: 2em;
+            span{
+                color:red;
+            }
+        }
+    }
+}
+.popupno{
+    display: none;
+}
+        

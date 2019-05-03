@@ -1,0 +1,293 @@
+@import "fonts/stylesheet.css";
+html {
+  font-size: 10px;
+}
+
+.body {
+  background-color: #e2e2e2;
+  font-size: 10px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body .headerwrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/metropolis.jpg);
+  width: 140em;
+  height: 58em;
+  background-position-x: center;
+  font-family: "Bitter";
+}
+.body .headerwrapper .topheader {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 110px;
+  margin-top: 1em;
+}
+.body .headerwrapper .topheader .objectway {
+  font-size: 3em;
+}
+.body .headerwrapper .topheader li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 2em;
+}
+.body .headerwrapper .topheader li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.body .headerwrapper .lowheader {
+  margin: 0 110px;
+  margin-top: 14em;
+  font-weight: bold;
+}
+.body .headerwrapper .lowheader p {
+  line-height: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.body .headerwrapper .lowheader p:first-child {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+.body .headerwrapper .lowheader .learnmore {
+  margin-top: 10em;
+}
+.body .headerwrapper .lowheader .learnmore a {
+  text-decoration: none;
+  color: white;
+  background: #52e052;
+  padding: 1em 3em;
+  font-size: 1.5em;
+}
+.body .boxes {
+  max-width: 1400px;
+}
+.body .boxes .whitebox {
+  width: 1400px;
+  background: white;
+}
+.body .boxes .whitebox .contentbox {
+  padding-top: 2em;
+  margin: 0 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.body .boxes .whitebox .contentbox .paragraph {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 5em;
+  font-weight: 900;
+}
+.body .boxes .whitebox .contentbox .descriptionbox {
+  width: 80em;
+  margin-bottom: 2em;
+}
+.body .boxes .whitebox .contentbox .descriptionbox .description p {
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+.body .boxes .whitebox .contentbox .descriptionbox .description p:first-child {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 4em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+.body .boxes .whitebox .contentbox .descriptionbox .description ul {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-size: 2em;
+  line-height: 2em;
+}
+.body .boxes .bluebox {
+  width: 1400px;
+  background: #1f4379;
+}
+.body .boxes .bluebox .contentbox {
+  padding-top: 2em;
+  margin: 0 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.body .boxes .bluebox .contentbox .paragraph {
+  color: white;
+  font-size: 5em;
+  font-weight: 900;
+}
+.body .boxes .bluebox .contentbox .descriptionbox {
+  width: 80em;
+  margin-bottom: 2em;
+}
+.body .boxes .bluebox .contentbox .descriptionbox .description p {
+  line-height: 2em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+.body .boxes .bluebox .contentbox .descriptionbox .description p:first-child {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+.body .boxes .bluebox .contentbox .descriptionbox .description ul {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-size: 2em;
+  line-height: 2em;
+}
+.body .contactbox {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin-bottom: 5em;
+}
+.body .contactbox .scritta {
+  width: 70em;
+}
+.body .contactbox .scritta p {
+  font-size: 1.5em;
+  line-height: 2em;
+  color: black;
+}
+.body .contactbox .scritta p:first-child {
+  font-size: 2em;
+  text-align: center;
+}
+.body .contactbox .input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body .contactbox .input form {
+  width: 70em;
+}
+.body .contactbox .input .nomenumero {
+  display: flex;
+}
+.body .contactbox .input .nomenumero .nome {
+  margin-right: 1em;
+}
+.body .contactbox .input .nomenumero .nome label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.body .contactbox .input .nomenumero .nome input {
+  font-size: 2rem;
+  width: 34.5rem;
+  margin: 10px 0;
+  height: 40px;
+}
+.body .contactbox .input .nomenumero .nome input:focus {
+  font-size: 20px;
+}
+.body .contactbox .input .nomenumero .numero label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.body .contactbox .input .nomenumero .numero input {
+  font-size: 2rem;
+  width: 34.5rem;
+  margin: 10px 0;
+  height: 40px;
+}
+.body .contactbox .input .nomenumero .numero input:focus {
+  font-size: 20px;
+}
+.body .contactbox .input .email label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.body .contactbox .input .email input {
+  font-size: 2rem;
+  width: 70rem;
+  margin: 10px 0;
+  height: 40px;
+}
+.body .contactbox .input .email input:focus {
+  font-size: 20px;
+}
+.body .contactbox .input .message label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.body .contactbox .input .message textarea {
+  font-size: 2rem;
+  width: 70rem;
+  height: 20em;
+  margin: 1em 0;
+}
+.body .contactbox .input .button button {
+  width: 18em;
+  height: 4em;
+  background: #2ea1ee;
+  border: 0;
+  color: white;
+}
+
+.sfondogrigiosi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(128, 128, 128, 0.5);
+  z-index: 999;
+  display: block;
+}
+
+.popupsi {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  word-break: break-all;
+  width: 800px;
+  height: 400px;
+  z-index: 1000;
+  background: white;
+  border: purple solid 3px;
+  display: flex;
+  flex-direction: column;
+}
+.popupsi button {
+  margin: 1em;
+  padding: 0.5em;
+  align-self: flex-end;
+}
+.popupsi .dati {
+  font-size: 3rem;
+  margin-left: 4em;
+}
+.popupsi .dati p {
+  margin-bottom: 2em;
+}
+.popupsi .dati p span {
+  color: red;
+}
+
+.popupno {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
