@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Gattile</title>
+    </head>
+    <body>
+        <h1> Hello World!!</h1>
+        <a href="./lista"> Lista</a>
+        <a href="./info" > Info</a>
+        <a href="./donatori"> Donatori</a>
+        <div>
+            <div id="a">
+
+            </div>
+            <div id="a">
+
+            </div>
+        </div>
+        
+
+        <script>
+            fetch('http://127.0.0.1:3000/api/list').then(function(res){
+                return res.json();
+            }).then(function(data){
+                data.forEach(element => {
+                    Object.values(element);
+                    let nomi=document.createTextNode(Object.values(element)[0]+" ");
+                    let p=document.createElement("p");
+                    p.innerHTML = document.createTextNode(nomi);
+                    console.log(p);
+                    document.querySelector("#a").appendChild(p);
+                });
+                
+                });
+        </script>
+    </body>
+</html>
