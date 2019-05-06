@@ -25,10 +25,8 @@
                 data.forEach(element => {
                     Object.values(element);
                     let nomi=document.createTextNode(Object.values(element)[0]+" ");
-                    let p=document.createElement("p");
-                    p.innerHTML = document.createTextNode(nomi);
-                    console.log(p);
-                    document.querySelector("#a").appendChild(p);
+                    
+                    document.querySelector("#a").appendChild(nomi);
                 });
                 
                 });
