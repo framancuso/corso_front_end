@@ -1,0 +1,79 @@
+    html{
+        font-size: 10px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: lightgrey;
+        .firstbox{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 25rem;
+            padding: 1rem 1rem;
+            box-sizing: border-box;
+            &__field{
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+                .firstbox__field--x{
+                    height: 50%;
+                    width: 100%;
+                    label{
+                        margin: 1rem 0;
+                        font-size: 3.5rem;
+                    }
+                    input{
+                        width: 100%;
+                        height: 50%;
+                        &:focus{
+                            font-size: 2rem;
+                        }
+                    }
+                    
+                }
+                
+            }
+            &__button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 15%;
+                height: 100%;
+                padding: 1rem 1rem 0rem;
+                button{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+@media screen and (min-width:960px){
+    .wrapper{
+        .firstbox__field{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .firstbox__field--x{
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+                height: 70%;
+            }
+        }
+        .firstbox__button{
+            height: auto;
+            align-items: center;
+            margin: 0 1rem;
+            button{
+                height: 11.5rem;
+                width: 100%;
+            }
+        }
+    }
+    
+}
