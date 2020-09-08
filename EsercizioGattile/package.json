@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "httpdispatcher": "2.1.2",
-    "http-proxy": "1.17.0"
+    "http-proxy": "1.18.1"
   }
 }
